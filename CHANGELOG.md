@@ -1,8 +1,13 @@
 # Changelog
 
+## 0.1.4
+
+  - **Released Friday May 2nd, 2014 @ 8.05pm**
+  - Added missing dependency: colors
+
 ## 0.1.3
 
-  - **Released Friday May 2nd, 2014 @ 8pmm**
+  - **Released Friday May 2nd, 2014 @ 8pm**
   - Added missing dependency: watchdirectory
 
 ## 0.1.2
