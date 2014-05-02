@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.2
+
+  - **Released Friday May 2nd, 2014 @ 3.50pmm**
+  - Fixed performance issue when using ```filesystem.findFirstMatch``` on large folder structures, for real this time
+
 ## 0.1.1
 
   - **Released Friday May 2nd, 2014 @ 3pmm**
