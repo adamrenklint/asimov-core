@@ -15,7 +15,7 @@ asimov-core
 
 Klass is a base class, which all other classes build on, and it is itself mostly a wrapper for the **EventEmitter** in [wunderbits.core](https://github.com/wunderlist/wunderbits.core/).
 
-```
+```javascript
 var Klass = require('asimov-core').Klass;
 
 var MyClass = module.exports = Klass.extend({
@@ -30,7 +30,7 @@ var MyClass = module.exports = Klass.extend({
 
 If you've worked with Backbone or wunderbits.core before, the API for binding to and triggering events should feel very familiar.
 
-```
+```javascript
 var theThing = new MyClass();
 
 theThing.on('event', function () {
@@ -44,14 +44,61 @@ theThing.trigger('event');
 
 Klass and all of its child classes comes with a convenient method for typechecking.
 
-```
+```javascript
 var MyClass = module.exports = Klass.extend({
-  
-  'saveValue': function (value) {
+
+  'saveValue': function (anything, value) {
+    this.assert('defined', anything, 'Anything must be defined!');
     this.assert('number', value, 'Value must be a number!');
   }
 });
 ```
+
+### Logger
+
+The logger class wraps console log to provide namespacing, task durations and more than one log level.
+
+#### Simple logging
+
+```
+var Logger = require('asimov-core').Logger;
+var logger = new Logger();
+
+logger.log('my-app', 'My awesome log message');
+```
+
+#### Log a pending task
+
+```
+logger.pending('my-app', 'Doing things right now');
+```
+
+#### Log task duration
+
+```
+var started = new Date();
+
+setTimeout(function () {
+  logger.since('my-app', 'And we are done', started);
+}, 1000);
+```
+
+#### Log level low
+
+These logs will only appear if ```process.env.VERBOSE``` is ```true```.
+
+```
+logger.low('my-app', 'My debug message');
+logger.lowSince('my-app', 'Some task is done', started);
+```
+
+### Filesystem
+
+All synchronous filesystem wrapper. Documentation coming soon!
+
+### ChildProcess
+
+A small wrapper for child_process. Documentation coming soon!
 
 ---
 
