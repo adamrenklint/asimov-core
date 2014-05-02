@@ -94,7 +94,15 @@ logger.lowSince('my-app', 'Some task is done', started);
 
 ### Filesystem
 
-All synchronous filesystem wrapper. Documentation coming soon!
+All synchronous filesystem abstraction, providing shortcuts for common use cases.
+
+```
+var Filesystem = require('asimov-core').Filesystem;
+var fs = new Filesystem();
+```
+
+- ```fs.exists (string path)``` check if path exists, returns true or false
+- ```fs.readDirectory (string path, function iterator)``` if path exists, execute iterator with path of each file and return true. if path doesn't exist, returns false.
 
 ### ChildProcess
 
