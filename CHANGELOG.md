@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.3
+
+  - **Released Friday May 2nd, 2014 @ 8pmm**
+  - Added missing dependency: watchdirectory
+
 ## 0.1.2
 
   - **Released Friday May 2nd, 2014 @ 3.50pmm**
