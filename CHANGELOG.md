@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.5
+
+  - **Released Saturday May 3rd, 2014 @ 10pm**
+  - Fix issue with the custom triggerEvent() method, now correctly calls calls the "all" event when any event is triggered
+
 ## 0.1.4
 
   - **Released Friday May 2nd, 2014 @ 8.05pm**
