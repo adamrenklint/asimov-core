@@ -1,6 +1,11 @@
 # Changelog
 
-##
+## 0.2.1
+
+  - **Released Sunday May 4th, 2014 @ 5.30pm**
+  - Fixed stupid issue from ```o.publicInterface()``` implementation
+
+## 0.2.0
 
   - **Released Sunday May 4th, 2014 @ 5.15pm**
   - Add public interface by defining a ```publicMethods``` array on Klass

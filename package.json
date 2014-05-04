@@ -1,6 +1,6 @@
 {
   "name": "asimov-core",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Base classes and toolkit for asimov.js",
   "main": "index.js",
   "author": "Adam Renklint <adam@renklint.com> (http://adamrenklint.com)",
