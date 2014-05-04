@@ -19,7 +19,7 @@ Klass is a base class, which all other classes build on, and it is itself mostly
 var Klass = require('asimov-core').Klass;
 
 var MyClass = module.exports = Klass.extend({
-  
+
   'myMethod': function () {
     console.log('Hello world')!
   }
@@ -52,6 +52,21 @@ var MyClass = module.exports = Klass.extend({
     this.assert('number', value, 'Value must be a number!');
   }
 });
+```
+
+#### Privacy with public interface
+
+A class can implement a public interface by defining an array of method names. Useful for singleton, top-level modules.
+
+```javascript
+var MyClass = Klass.extend({
+
+  'publicMethods': [
+    'aMethodName'
+  ]
+});
+var instance = new MyClass();
+module.exports = instance.publicInterface();
 ```
 
 ### Logger

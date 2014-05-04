@@ -1,5 +1,11 @@
 # Changelog
 
+##
+
+  - **Released Sunday May 4th, 2014 @ 5.15pm**
+  - Add public interface by defining a ```publicMethods``` array on Klass
+  - Access it with ```o.publicInterface()```
+
 ## 0.1.5
 
   - **Released Saturday May 3rd, 2014 @ 10pm**
