@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.3
+
+  - **Released Saturday May 10th, 2014 @ 6.35pm**
+  - One shared logger, across the entire runtime
+
 ## 0.2.2
 
   - **Released Saturday May 10th, 2014 @ 5.15pm**
