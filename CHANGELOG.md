@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.2
+
+  - **Released Saturday May 10th, 2014 @ 5.15pm**
+  - Logs with namespace ```error``` are always red
+
 ## 0.2.1
 
   - **Released Sunday May 4th, 2014 @ 5.30pm**
