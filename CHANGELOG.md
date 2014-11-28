@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.0
+
+  - **Released Friday November 28th, 2014 @ 4.45pm**
+  - Improved assert method for numbers, now returns false if the inspected object is ```NaN```
+
 ## 0.2.3
 
   - **Released Saturday May 10th, 2014 @ 6.35pm**
