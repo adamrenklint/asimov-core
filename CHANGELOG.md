@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.0
+
+  - Update all dependencies to latest version
+
 ## 0.3.0
 
   - **Released Friday November 28th, 2014 @ 4.45pm**
